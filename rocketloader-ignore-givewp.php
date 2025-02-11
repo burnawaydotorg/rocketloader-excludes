@@ -12,6 +12,12 @@ if (!defined('ABSPATH')) {
 }
 
 function givewp_jquery_exclude_from_rocket_loader($attr) {
+    // Check if we are on a give-embed page
+    if (isset($_GET['give-embed'])) {
+        $attr['data-cfasync'] = 'false';
+        return $attr;
+    }
+
     // Check if the script handle or src contains 'give' or 'jquery'
     if (isset($attr['id']) || isset($attr['src'])) {
         $check_string = strtolower(
