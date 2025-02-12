@@ -1,5 +1,4 @@
-====
-GiveWP & jQuery Rocket Loader Exclude
+GiveWP & jQuery Rocket Loader Excludes
 ====
 
 Contributors: brandonsheats
