@@ -26,7 +26,9 @@ function givewp_jquery_exclude_from_rocket_loader($attr) {
         );
         
         if (strpos($check_string, 'give') !== false || 
-            strpos($check_string, 'jquery') !== false) {
+            strpos($check_string, 'jquery') !== false ||
+            strpos($check_string, 'givewp') !== false ||
+            strpos($check_string, 'darkmode') !== false) {
             
             // Add the data-cfasync attribute to exclude from Rocket Loader
             $attr['data-cfasync'] = 'false';
